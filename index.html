@@ -19,7 +19,8 @@
 
     <button type="button" onclick="sum()">Shuma</button>
     <button type="button" onclick="sub()">Zbritje</button>
-    <button type="button" onclick="shumezimi()">Zbritje</button>
+    <button type="button" onclick="shumezimi()">shumezimi</button>
+    <button type="button" onclick="pjestim()">Pjestim</button>
 
     
 
@@ -48,6 +49,14 @@
             var b = Number(document.getElementById('nr2').value);
 
             var c = a * b;
+
+            document.getElementById('result').textContent = c;
+        }
+          function pjestimi() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a / b;
 
             document.getElementById('result').textContent = c;
         }
