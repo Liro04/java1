@@ -1,8 +1,9 @@
-
+```html
 <!DOCTYPE html>
-<html>
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java 1</title>
 </head>
 <body>
@@ -19,10 +20,8 @@
 
     <button type="button" onclick="sum()">Shuma</button>
     <button type="button" onclick="sub()">Zbritje</button>
-    <button type="button" onclick="shumezimi()">shumezimi</button>
-    <button type="button" onclick="pjestim()">Pjestim</button>
-
-    
+    <button type="button" onclick="shumezimi()">Shumezimi</button>
+    <button type="button" onclick="pjestimi()">Pjestimi</button>
 
     <p id="result"></p>
 
@@ -34,9 +33,9 @@
             var c = a + b;
 
             document.getElementById('result').textContent = c;
-            
         }
-          function sub() {
+
+        function sub() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
 
@@ -44,7 +43,8 @@
 
             document.getElementById('result').textContent = c;
         }
-          function shumezimi() {
+
+        function shumezimi() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
 
@@ -52,18 +52,20 @@
 
             document.getElementById('result').textContent = c;
         }
-          function pjestimi() {
+
+        function pjestimi() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
-              if(b==0){
-                                document.getElementById('result').innerHTML= c;
-                else
-              }
 
-            var c = a / b;
-
-            document.getElementById('result').textContent = c;
+            if (b === 0) {
+                document.getElementById('result').textContent =
+                    "Gabim: Pjestimi me zero nuk lejohet!";
+            } else {
+                var c = a / b;
+                document.getElementById('result').textContent = c;
+            }
         }
     </script>
 </body>
 </html>
+```
