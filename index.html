@@ -1,36 +1,35 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-      <title>Java 1 </title>
-      </head>
-      <body>
-      <h1>Mire se vini</h1>
-      <p> Kjo eshte fqja ime e par ne GIthub Pages..</p>
+    <title>Java 1</title>
+</head>
+<body>
+    <h1>Mire se vini</h1>
+    <p>Kjo eshte faqja ime e pare ne GitHub Pages.</p>
 
+    <label for="nr1">Numri i pare:</label>
+    <input type="number" id="nr1">
+    <br><br>
 
-        <label>Numri Par</label>
-        <input type="number" id="nr1">
-        <br>
-        <label>Numri i Dyt</label>
-        <input type="number" id="nr2">
-        <br>
-        <button  type="submit"onclick="sum()">Shuma</button>
-        <p id ="result" ></p>
+    <label for="nr2">Numri i dyte:</label>
+    <input type="number" id="nr2">
+    <br><br>
 
+    <button type="button" onclick="sum()">Shuma</button>
 
-        <script>
-          function sum()
-          {
-            var a=Number(document.getElementById('nr1').value);
-            var b=Number(document.getElementById('nr2').value);
-            var c=a+b;
-            document.GetElemenyById('result').innerHTML=c;
-            
-          }
-        </script>
-      </body>
-    
+    <p id="result"></p>
 
-  </head>
+    <script>
+        function sum() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a + b;
+
+            document.getElementById('result').textContent = c;
+        }
+    </script>
+</body>
 </html>
