@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="sq">
 <head>
@@ -24,8 +24,18 @@
     <button type="button" onclick="pjestimi()">Pjestimi</button>
 
     <p id="result"></p>
-
+    <br>
+    <br>
+        <h2>Ritje/zbritje te numrit</h2>
+    <p id="numri">0</p>
+    <button type="submit" onclick="rritje()">Rritje +</button>
+    <button type="submit" onclick="Zbritje()">Zbritje -</button>
     <script>
+        var n=0;
+        function rritje(){
+            n=n+1;
+            document.GetElementById('numri').innerHTML=n;
+        }
         function sum() {
             var a = Number(document.getElementById('nr1').value);
             var b = Number(document.getElementById('nr2').value);
